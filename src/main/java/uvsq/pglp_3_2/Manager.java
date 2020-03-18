@@ -4,6 +4,7 @@ public class Manager extends Employee{
 	
 	public Manager(int Anc,int nbEm)
 	{
+		if(nbEmp<0 || Ancienete<0) throw new IllegalArgumentException();
 		nbEmp=nbEm;
 		Ancienete=Anc;
 	}

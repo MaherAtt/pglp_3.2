@@ -5,6 +5,7 @@ public class Vendeur extends Employee {
 	
 	public  Vendeur(int Anc,int Com)
 	{
+		if(Commision<0 || Ancienete<0) throw new IllegalArgumentException();
 		Commision=Com;
 		Ancienete=Anc;
 	}
