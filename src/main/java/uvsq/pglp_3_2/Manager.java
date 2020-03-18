@@ -7,7 +7,7 @@ public class Manager extends Employee{
 		nbEmp=nbEm;
 		Ancienete=Anc;
 	}
-	private int nbEmp;
+	public int nbEmp;
 	
 	public int calculSalaire()
 	{
