@@ -42,8 +42,14 @@ public class TestEmployee {
 	public void testCalculSalaireManager()
 	{
 		Manager v=new Manager(5,2);
-		assert(v.calculSalaire()==1500+20*v.Ancienete+v.nbEmp*100);
+		assert(v.calculSalaire()==1800);
 	}
 	
+	@Test
+	public void testCalculSalaireVendeur()
+	{
+		Vendeur v=new Vendeur(5,2);
+		assert(v.calculSalaire()==1602);
+	}
 
 }
